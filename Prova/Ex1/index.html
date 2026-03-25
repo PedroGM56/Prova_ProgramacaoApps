@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    
+    <div class="container">
+        <div class="titulo">
+            <h1>Painel de Análise de Produtos</h1>
+        </div>
+       
+        <div class="inputs">
+            <input class="input" type="text" id="nome" placeholder="Nome do produto">
+            <input class="input" type="number" id="preco" placeholder="Preço (R$)">
+            <input class="input" type="number" id="qtd" placeholder="Quantidade">
+            <button class="botao" id="adicionar" onclick="adicionar()">Adicionar Produto</button>
+        </div>
+
+        <div class="cartoes">
+            <div class="cartao1">
+                <div class="texto1">Produto Mais Caro</div>
+                <div class="caro" id="maisCaro"></div>
+            </div>
+            <div class="cartao2">
+                <div class="texto2">Maior Quantidade</div>
+                <div class="qtd" id="maiorQtd"></div>
+            </div>
+            <div class="cartao3">
+                <div class="texto3">Valor Total em Estoque</div>
+                <div class="estoque" id="estoque"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
